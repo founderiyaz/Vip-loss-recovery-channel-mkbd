@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 
@@ -13,150 +12,158 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1034558118621719');
+fbq('init', '792680606951324');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1034558118621719&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=792680606951324&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
   
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join Telegram Channel</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Telegram Landing Page</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
       min-height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      padding: 20px;
     }
-    .elementor img {
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    height: auto;
-    max-width: 100%;
-    border-radius: 90px;
-}
-    .card {
-      backdrop-filter: blur(12px);
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 1rem;
-      padding: 2rem;
-      max-width: 400px;
+    .container {
+      max-width: 700px;
       width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
       text-align: center;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     }
-    .btn-telegram {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 0.8rem 1.2rem;
-      border-radius: 0.75rem;
-      font-weight: bold;
-      color: white;
-      background: linear-gradient(90deg, #0088cc, #00bcd4);
-      transition: 0.3s;
+    /* Circle Image Wrapper */
+    .circle-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px auto;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+    .circle-img img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
-    .btn-telegram:hover {
-      background: linear-gradient(90deg, #00bcd4, #0088cc);
-      transform: translateY(-2px);
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00f5a0, #00d9f5);
+      -webkit-background-clip: text;
+      color: transparent;
     }
-    .feature {
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
-      font-size: 0.95rem;
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+    .counter {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+      color: #00f5d4;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 15px 35px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00f5a0, #00d9f5);
+      color: #000;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 249, 200, 0.4);
+      transition: transform 0.3s;
+      animation: pulse 2s infinite;
+    }
+    .cta-button:hover {
+      transform: scale(1.08);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0, 249, 200, 0.6); }
+      70% { box-shadow: 0 0 0 20px rgba(0, 249, 200, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 249, 200, 0); }
+    }
+    .disclaimer {
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 0.55rem;
+      line-height: 1.4;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      color: #bbb;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5rem; }
+      p { font-size: 0.95rem; }
+      .cta-button { font-size: 1rem; padding: 12px 25px; }
+      .circle-img { width: 150px; height: 150px; }
     }
   </style>
 </head>
 <body>
-
-  <div class="card">
-    <!-- Profile Image -->
-    <div class="w-32 h-32 mx-auto mb-4 ">
-      <img src="https://telegram-ads.riyazshaikh.com/wp-content/uploads/2025/09/rochit.jpg" alt="Profile" class="w-full h-full rounded-full object-cover shadow-lg border-4 border-white rounded-xxl">
+  <div class="container">
+    
+    <!-- Circle Image -->
+    <div class="circle-img">
+      <img src="https://telegram-ads.riyazshaikh.com/wp-content/uploads/2026/01/vip-img.jpg" alt="Landing Page Banner">
     </div>
 
     <!-- Heading -->
-    <h1 class="text-xl font-extrabold text-gray-800 mb-1">
-      𝙍𝙊𝘾𝙃𝙄𝙏 𝙎𝙄𝙉𝙂𝙃 𝙎𝙏𝙊𝘾𝙆𝙎 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 💸🏆
-    </h1>
+    <h1>𝗖𝗢𝗟𝗢𝗨𝗥 𝗧𝗥𝗔𝗗𝗜𝗡𝗚 𝗟𝗢𝗦𝗦 𝗥𝗘𝗖𝗢𝗩𝗘𝗥𝗬 ™ 🎯</h1>
 
-    <!-- Experience -->
-    <p class="text-red-600 font-semibold mb-4">📊 7 years experience 📊</p>
+    <!-- Description -->
+    <p>Join Our Exclusive Telegram Channel 🏆</p
+    <p>     ⟴ 𝗙𝗔𝗦𝗧 𝗪𝗜𝗧𝗛𝗗𝗥𝗔𝗪𝗔𝗟</p   
+<p>⟴ 𝗗𝗔𝗜𝗟𝗬 𝗙𝗥𝗘𝗘 𝗚𝗜𝗙𝗧𝗦</p>
+    <p>⟴ 𝟭𝟬𝟬% 𝗦𝗨𝗥𝗘𝗦𝗛𝗢𝗧𝗦</p>
+    
+    <!-- Live Subscribers Counter -->
+    <p class="counter">🔥 <span id="subscriberCount">7006</span>+ Members Already Joined!</p>
 
     <!-- CTA Button -->
-    <a href="https://t.me/+tuZIXeyVe_NiMzJl" target="_blank" class="btn-telegram mb-6">
-
-      
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M16 8a8 8 0 1 1-16 0 8 8 0 0 1 16 0zM6.79 10.89l-.27 3.67c.39 0 .56-.17.77-.38l1.85-1.76 3.84 2.8c.7.39 1.19.19 1.36-.65l2.47-11.59c.22-.98-.35-1.37-1.05-1.14L1.13 6.24c-.95.37-.93.9-.17 1.14l3.57 1.11 8.3-5.23c.39-.26.74-.12.45.14L6.79 10.89z"/>
-      </svg>
-      JOIN TELEGRAM 💬
+    <a href="https://t.me/+hxj6FIXUSew4MTNl" target="_blank" class="cta-button">
+      👉 Join Telegram Channel
     </a>
 
-    <!-- Features -->
-    <p class="text-red-600 font-bold mb-4">💎 DAILY PROFIT GURANTEE 💎</p>
-    <div class="text-left space-y-3 text-gray-800 mb-6">
-      <div class="feature">📊 <span><b>Live Daily Trades</b> – From my portfolio to yours!</span></div>
-      <div class="feature">🔥 <span><b>Exclusive Signals</b> – Get the same trades I take!</span></div>
-      <div class="feature">💯 <span><b>High Accuracy</b> – Consistent proven strategy!</span></div>
-      <div class="feature">💡 <span><b>Real-Time Updates</b> – Instant market alerts!</span></div>
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong> This page is not endorsed by Meta (Facebook, Instagram).  
+      We use Meta Ads only for promotional purposes. Always do your own due diligence before joining or investing.
     </div>
 
-    <!-- Hindi Section -->
-    <h2 class="text-lg font-bold text-gray-800 mb-2">क्या आप ट्रेडिंग से पैसे कमाना चाहते हैं?</h2>
-    <p class="text-red-600 font-semibold">
-      अगर हां तो दिए गए टेलीग्राम बटन पर दबाएं !
-    </p>
   </div>
 
+  <script>
+    // Subscriber Counter Simulation
+    let count = 7006; // starting number
+    const counter = document.getElementById("subscriberCount");
+
+    setInterval(() => {
+      count += Math.floor(Math.random() * 5) + 1; // increase 1-5 randomly
+      counter.innerText = count.toLocaleString();
+    }, 1000); // every 3 sec
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
